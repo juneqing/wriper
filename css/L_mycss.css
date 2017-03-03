@@ -1,0 +1,906 @@
+         html,
+         body {
+             position: relative;
+             height: 100%;
+         }
+         
+         body {
+             background: #eee;
+             font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+             font-size: 14px;
+             color: #000;
+             margin: 0;
+             padding: 0;
+         }
+         
+         .swiper-container {
+             width: 100%;
+             height: 100vmax;
+         }
+         
+         .swiper-slide {
+             width: 100%;
+             height: 100%;
+             text-align: center;
+             font-size: 1.286rem;
+             position: relative;
+             background-image: url(../images/bjt_4.gif);
+             z-index: 333;
+             background-size: cover;
+             /* Center slide text vertically */
+             display: -webkit-box;
+             display: -ms-flexbox;
+             display: -webkit-flex;
+             display: flex;
+             -webkit-box-pack: center;
+             -ms-flex-pack: center;
+             -webkit-justify-content: center;
+             justify-content: center;
+             -webkit-box-align: center;
+             -ms-flex-align: center;
+             -webkit-align-items: center;
+             align-items: center;
+         }
+         
+         .L_Mask {
+             width: 100%;
+             height: 100%;
+             background-color: rgba(0, 255, 255, 0.6);
+             z-index: 444;
+         }
+         
+         .Mask {
+             width: 90%;
+             height: 90%;
+             margin: 0 auto;
+             position: absolute;
+             top: 5%;
+             left: 5%;
+             background-color: rgba(0, 0, 0, 0.3);
+             border-top: 0.343rem solid white;
+             border-radius: 1.429rem;
+             z-index: 444;
+         }
+         
+         .Mask .Dashed {
+             width: 80%;
+             height: 3.857rem;
+             margin: 0 auto;
+             border: 0.143rem dashed white;
+             position: absolute;
+             top: 4.000rem;
+             left: 10%;
+             border-radius: 1.429rem;
+         }
+         
+         .Mask .resume {
+             font-size: 2.857rem;
+             color: navajowhite;
+             font-family: "Times New Roman";
+             font-style: oblique;
+         }
+         
+         .Mask .Name {
+             font-size: 1.857rem;
+             color: ghostwhite;
+             font-family: '楷体';
+             margin-top: 50%;
+         }
+         
+         .Mask .one {
+             position: absolute;
+             top: 4.857rem;
+             left: 10%;
+         }
+         
+         .Mask .two {
+             position: absolute;
+             top: 4.857rem;
+             left: 30%;
+         }
+         
+         .Mask .three {
+             position: absolute;
+             top: 4.857rem;
+             left: 50%;
+         }
+         
+         .Mask .four {
+             position: absolute;
+             top: 4.857rem;
+             left: 70%;
+         }
+         
+         .Mask span {
+             font-size: 2.857rem;
+             line-height: 2.857rem;
+             text-align: center;
+             color: white;
+             font-family: "Times New Roman";
+             font-style: oblique;
+         }
+         
+         #music {
+             position: absolute;
+             top: 6%;
+             right: 13%;
+             z-index: 667;
+             opacity: 0.1;
+         }
+         
+         .cercle {
+             width: 10%;
+             position: absolute;
+             top: 5%;
+             opacity: 1;
+             right: 10%;
+             border: 0;
+             z-index: 666;
+         }
+         /*音乐播放器动画*/
+         
+         .music_0 {
+             animation: L_animate 1.2s infinite linear;
+         }
+         
+         @keyframes L_animate {
+             from {
+                 transform: rotate(0);
+             }
+             to {
+                 transform: rotate(360deg);
+             }
+         }
+         /*箭头动画*/
+         
+         .single {
+             width: 5%;
+             position: absolute;
+             left: 49%;
+             bottom: 0rem;
+             opacity: 1;
+             z-index: 666;
+             animation: S_animate 2.0s infinite linear;
+         }
+         
+         @keyframes S_animate {
+             from {
+                 transform: rotate(0);
+             }
+             to {
+                 transform: translateY(-2rem);
+                 opacity: 0;
+             }
+         }
+         /*圆圈动画*/
+         
+         .circular {
+             width: 50%;
+             position: absolute;
+             top: 14.5rem;
+             right: 25%;
+             animation: C_animate infinite linear;
+             animation-delay: 6.5s;
+         }
+         
+         @keyframes C_animate {
+             from {
+                 transform: rotate(0);
+             }
+             to {
+                 transform: rotate(360deg);
+             }
+         }
+         
+         .swiper-two {
+             background-image: url(../images/bjt_3.jpg);
+         }
+         
+         .swiper-three {
+             background-image: url(../images/bjt_5.jpg);
+         }
+         
+         .swiper-four {
+             background-image: url(../images/bjt_2.jpg);
+         }
+         
+         .swiper-five {
+             background-image: url(../images/bjt_6.gif);
+         }
+         
+         .swiper-six {
+             background-image: url(../images/bjt_8.gif);
+         }
+         
+         .swiper-seven {
+             background-image: url(../images/bjt.jpg);
+         }
+         /*第二页*/
+         
+         .M_border {
+             border: 0;
+             border-left: 0.343rem solid white;
+             border-radius: 1.429rem;
+         }
+         
+         .M_border .Border {
+             position: absolute;
+             top: 4rem;
+             width: 32%;
+             border-bottom: 0.143rem dashed white;
+         }
+         
+         .M_border .Borders {
+             position: absolute;
+             top: 4rem;
+             width: 32%;
+             right: 0;
+             border-bottom: 0.143rem dashed white;
+         }
+         
+         .M_border .Menu {
+             color: navajowhite;
+             font-size: 2rem;
+             width: 4.5rem;
+             height: 4.5rem;
+             border: 0.143rem dashed white;
+             line-height: 4rem;
+             border-radius: 0.2rem;
+             position: absolute;
+             top: 2rem;
+             left: 37%;
+         }
+         
+         .back {
+             width: 4rem;
+             height: 4rem;
+             background-color: rgba(255, 255, 255, 0.3);
+             position: absolute;
+             top: 0.25rem;
+             left: 0.25rem;
+         }
+         
+         .quan {
+             color: navajowhite;
+             font-size: 2rem;
+             width: 4.5rem;
+             height: 4.5rem;
+             border: 0.143rem dashed white;
+             line-height: 4rem;
+             border-radius: 0.2rem;
+             position: absolute;
+             top: 2rem;
+             left: 37%;
+         }
+         
+         .quan1 {
+             animation: q_animate infinite ease;
+         }
+         
+         @keyframes q_animate {
+             from {
+                 transform: rotate(0);
+             }
+             to {
+                 transform: rotate(360deg);
+             }
+         }
+         
+         .Solid {
+             width: 9.8rem;
+             height: 0.4rem;
+             background-color: rgba(255, 255, 255, 0.3);
+             margin-bottom: 0.5rem;
+         }
+         
+         .details {
+             width: 60%;
+             height: 58%;
+             position: absolute;
+             top: 10rem;
+             left: 20%;
+         }
+         
+         .details span {
+             color: white;
+             font-size: 2rem;
+         }
+         
+         .details img {
+             width: 20%;
+         }
+         
+         .details .singleL {
+             width: 25%;
+         }
+         
+         .details div {
+             width: 4.5rem;
+             height: 2rem;
+             border: 0.143rem dashed white;
+             color: white;
+             font-size: 1rem;
+         }
+         
+         .clear {
+             clear: both;
+             height: 3rem;
+         }
+         /*第三页*/
+         
+         .cotton {
+             width: 0.1rem;
+             height: 2.4rem;
+             position: absolute;
+             top: 0;
+             left: 8.8rem;
+             z-index: 999;
+             background-color: white;
+         }
+         
+         .T_border {
+             border: 0;
+             border-left: 0.343rem solid white;
+             border-radius: 1.429rem;
+         }
+         
+         .book {
+             width: 9.564rem;
+             border: 0;
+             position: absolute;
+             top: 0rem;
+             left: 3.0rem;
+         }
+         
+         .T_border span {
+             position: absolute;
+             top: 1.5rem;
+             left: 6.3rem;
+             z-index: 444;
+             color: yellow;
+         }
+         
+         .P_information {
+             position: absolute;
+             top: 6.8rem;
+             left: 5.0rem;
+             width: 6rem;
+             height: 1.8rem;
+             font-size: 1.5rem;
+             line-height: 1.8rem;
+             border: 0.08rem dashed white;
+             color: white;
+         }
+         
+         .About {
+             position: absolute;
+             top: 8.6rem;
+             left: 5.0rem;
+             width: 6rem;
+             height: 1.8rem;
+             font-size: 1rem;
+             line-height: 1.8rem;
+             color: white;
+         }
+         
+         .back_k {
+             width: 16.1rem;
+             position: absolute;
+             top: 10rem;
+             left: 0;
+         }
+         
+         .L_Name {
+             position: absolute;
+             top: 12.5rem;
+             left: 4.5rem;
+             width: 7rem;
+             height: 2rem;
+             background-color: rgba(0, 255, 255, 0.4);
+             border-radius: 0.5rem;
+         }
+         
+         .LName {
+             position: absolute;
+             top: 12.5rem;
+             left: 5rem;
+             width: 6rem;
+             height: 2rem;
+             color: yellow;
+             font-family: sans-serif;
+             background-color: rgba(0, 255, 255, 0.8);
+             border-radius: 0.5rem;
+             z-index: 4;
+         }
+         
+         .LEFT {
+             position: absolute;
+             top: 12.75rem;
+             left: 4rem;
+             width: 1.5rem;
+         }
+         
+         .RIGHT {
+             width: 1.6rem;
+             position: absolute;
+             top: 12.8rem;
+             right: 4.2rem;
+         }
+         
+         .yuand {
+             width: 2rem;
+             position: absolute;
+             top: 12.5rem;
+             z-index: 4;
+         }
+         
+         .YO {
+             left: 2rem;
+         }
+         
+         .YT {
+             left: 3rem;
+         }
+         
+         .YR {
+             right: 2rem;
+         }
+         
+         .YF {
+             right: 3rem;
+         }
+         
+         .Occupation {
+             position: absolute;
+             top: 14.5rem;
+             left: 6rem;
+             font-size: 0.8rem;
+         }
+         
+         .T_border p {
+             font-size: 0.9rem;
+             border: 0.08rem dashed rgba(0, 255, 255, 0.8);
+             width: 11rem;
+         }
+         /*地址*/
+         
+         .T_border .adress {
+             position: absolute;
+             top: 16rem;
+             left: 2.5rem;
+         }
+         
+         .LY {
+             top: 15.8rem;
+             left: 2.5rem;
+         }
+         
+         .RY {
+             top: 15.8rem;
+             left: 11.5rem;
+         }
+         /*职业*/
+         
+         .major {
+             position: absolute;
+             top: 18rem;
+             left: 2.5rem;
+         }
+         
+         .major_LY {
+             top: 17.8rem;
+         }
+         
+         .major_RY {
+             top: 17.8rem;
+             left: 11.5rem;
+         }
+         /*年龄*/
+         
+         .Age {
+             position: absolute;
+             top: 20rem;
+             left: 2.5rem;
+         }
+         
+         .Age_LY {
+             top: 19.8rem;
+         }
+         
+         .Age_RY {
+             top: 19.8rem;
+             left: 11.5rem;
+         }
+         /*教育水平*/
+         
+         .edu_level {
+             position: absolute;
+             top: 22rem;
+             left: 2.5rem;
+         }
+         
+         .level_LY {
+             top: 21.8rem;
+         }
+         
+         .level_RY {
+             top: 21.8rem;
+             left: 11.5rem;
+         }
+         /*座右铭*/
+         
+         .Motto {
+             position: absolute;
+             top: 24rem;
+             left: 2.5rem;
+         }
+         
+         .Motto_LY {
+             top: 23.8rem;
+         }
+         
+         .Motto_RY {
+             top: 23.8rem;
+             left: 11.5rem;
+         }
+         /*第四页*/
+         
+         .F_border {
+             border: 0;
+             border-right: 0.343rem solid white;
+         }
+         
+         .YX {
+             width: 3rem;
+             position: absolute;
+             left: 0rem;
+         }
+         
+         .YXO {
+             top: 10.5rem;
+         }
+         
+         .YXT {
+             top: 13.5rem;
+         }
+         
+         .YXR {
+             top: 16.5rem;
+         }
+         
+         .YXF {
+             top: 19.5rem;
+         }
+         
+         .YXV {
+             top: 22.5rem;
+         }
+         
+         .logo {
+             width: 2rem!important;
+             z-index: 5;
+             position: absolute;
+             left: 0.5rem;
+         }
+         
+         .logoO {
+             top: 11rem;
+         }
+         
+         .logoT {
+             top: 14rem;
+         }
+         
+         .logoR {
+             top: 17rem;
+         }
+         
+         .logoF {
+             top: 20.4rem;
+         }
+         
+         .logoV {
+             top: 23rem;
+         }
+         
+         .Progress {
+             width: 6rem;
+             position: absolute;
+         }
+         
+         .ProgressO {
+             top: 11.5rem;
+             left: 3.5rem;
+         }
+         
+         .ProgressT {
+             top: 11.5rem;
+             left: 9.5rem;
+         }
+         
+         .ProgressR {
+             top: 14.5rem;
+             left: 3.5rem;
+         }
+         
+         .ProgressF {
+             top: 17.5rem;
+             left: 3.5rem;
+         }
+         
+         .ProgressV {
+             top: 17.5rem;
+             left: 9.5rem;
+         }
+         
+         .ProgressS {
+             top: 20.5rem;
+             left: 3.5rem;
+         }
+         
+         .ProgressE {
+             top: 23.5rem;
+             left: 3.5rem;
+         }
+         
+         .ProgressI {
+             top: 23.5rem;
+             left: 9.5rem;
+         }
+         /*第五页*/
+         
+         .down {
+             width: 5rem;
+             position: absolute;
+             left: -1.5rem;
+         }
+         
+         .downO {
+             top: 12rem;
+         }
+         
+         .downT {
+             top: 14.5rem;
+         }
+         
+         .downR {
+             top: 17rem;
+         }
+         
+         .downF {
+             top: 19.5rem;
+         }
+         
+         .downV {
+             top: 22rem;
+         }
+         
+         .heng {
+             width: 3rem;
+             position: absolute;
+             left: 1rem;
+         }
+         
+         .hengO {
+             top: 10.6rem;
+         }
+         
+         .hengT {
+             top: 25.2rem;
+         }
+         
+         .yuandian {
+             width: 3rem;
+             position: absolute;
+             left: 2.8rem;
+         }
+         
+         .yuandianO {
+             top: 10.7rem;
+         }
+         
+         .yuandianT {
+             top: 25.3rem;
+         }
+         
+         .downSingle {
+             width: 1rem;
+             position: absolute;
+             left: 0.5rem;
+         }
+         
+         .downSingleO {
+             top: 14.5rem;
+         }
+         
+         .downSingleT {
+             top: 17.5rem;
+         }
+         
+         .downSingleR {
+             top: 20.5rem;
+         }
+         
+         .downSingleF {
+             top: 23.5rem;
+         }
+         
+         .Data {
+             color: white;
+             position: absolute;
+             left: 2rem;
+         }
+         
+         .DataO {
+             top: 14.55rem;
+         }
+         
+         .DataT {
+             top: 17.55rem;
+         }
+         
+         .DataR {
+             top: 20.55rem;
+         }
+         
+         .DataF {
+             top: 23.55rem;
+         }
+         
+         .company {
+             width: 8.5rem;
+             height: 1.5rem;
+             border: 0.08rem dashed white;
+             font-size: 0.8rem;
+             position: absolute;
+             left: 7rem;
+             color: white;
+         }
+         
+         .companyO {
+             top: 14.2rem;
+         }
+         
+         .companyT {
+             top: 17.2rem;
+         }
+         
+         .companyR {
+             top: 20.2rem;
+         }
+         
+         .companyF {
+             top: 23.2rem;
+         }
+         /*第六页*/
+         
+         .One,
+         .Two {
+             width: 4rem;
+             height: 6rem;
+             border: 0.08rem dashed white;
+         }
+         
+         .One {
+             position: absolute;
+             top: 11rem;
+             left: 3rem;
+         }
+         
+         .Two {
+             position: absolute;
+             top: 11rem;
+             left: 10rem;
+         }
+         
+         .Three,
+         .Four {
+             width: 10rem;
+             height: 3rem;
+             border: 0.08rem dashed white;
+         }
+         
+         .Three {
+             position: absolute;
+             top: 18.5rem;
+             left: 3.5rem;
+         }
+         
+         .Four {
+             position: absolute;
+             top: 23.5rem;
+             left: 3.5rem;
+         }
+         /*第七页*/
+         
+         .Thank {
+             color: white;
+             position: absolute;
+             top: 11rem;
+             left: 5rem;
+             font-family: "Times New Roman";
+             font-style: oblique;
+         }
+         
+         .border_C {
+             position: absolute;
+             left: 3rem;
+             top: 21.5rem;
+             width: 10rem;
+             height: 2rem;
+             border: 0.08rem dashed white;
+         }
+         
+         .border_T {
+             top: 24rem;
+         }
+         
+         .contact {
+             color: white;
+             position: absolute;
+             top: 13rem;
+             left: 4rem;
+         }
+         
+         .weixin {
+             width: 6rem;
+             position: absolute;
+             top: 15rem;
+             left: 5rem;
+         }
+         
+         .tel {
+             width: 1.5rem;
+             position: absolute;
+             top: 21.75rem;
+             left: 3rem;
+         }
+         
+         .telephone {
+             position: absolute;
+             top: 21.75rem;
+             left: 4.5rem;
+             color: white;
+             font-size: 1rem;
+         }
+         
+         .qq {
+             width: 1.5rem;
+             position: absolute;
+             top: 24.25rem;
+             left: 3rem;
+         }
+         
+         .QQ {
+             position: absolute;
+             top: 24.25rem;
+             left: 4.5rem;
+             color: white;
+             font-size: 1rem;
+         }
+         
+         .HO {
+             top: 26rem;
+         }
+         
+         .HT {
+             top: 26rem;
+             left: 4.25rem;
+         }
+         
+         .Lsingle {
+             width: 1.25rem;
+             position: absolute;
+             top: 26.9rem;
+             left: 7.35rem;
+         }
+         
+         .HR {
+             top: 26rem;
+             left: 8.75rem;
+         }
+         
+         .HF {
+             top: 26rem;
+             left: 11rem;
+         }
